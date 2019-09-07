@@ -14,3 +14,12 @@ class BreastCancer:
             cancer.data,cancer.target,stratify=cancer.target,random_state=42
 
         )
+        tree = DecisionTreeClassifier(random_state=0)
+        tree.fit(X_train,y_train)
+        print('훈련세트의 정확도 : {:.3f}'.format(tree.score(X_train,y_train)))
+        print('테스트세트의 정확도 : {:.3f}'.format(tree.score(X_test, y_test)))
+        '''
+        디시전트리의 단점:독립변수의 개수가 많은 빅데이타에서는 과최적화가 쉽게 발생한다
+        
+        
+        '''
