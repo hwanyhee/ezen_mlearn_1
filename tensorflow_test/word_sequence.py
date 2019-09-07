@@ -1,4 +1,4 @@
-#자연어 처리 예제
+#자연어 처리 예제(자연어처리(Natural Language Processing, NLP))
 import tensorflow as tf
 import matplotlib.pyplot as plt
 import numpy as np

@@ -2,10 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3891a366-14e3-4f85-add9-32d62abeda02" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/tensorflow_test/word_sequence.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensorflow_test/data/review_train.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensorflow_test/driver/chromedriver.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensorflow_test/mail_checker_ctrl.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensorflow_test/mail_checker_model.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensorflow_test/naive_bayes.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensorflow_test/web_crawler.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tensorflow_test/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/tensorflow_test/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tensorflow_test/mammal.py" beforeDir="false" afterPath="$PROJECT_DIR$/tensorflow_test/mammal.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tensorflow_test/word_sequence.py" beforeDir="false" afterPath="$PROJECT_DIR$/tensorflow_test/word_sequence.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -27,6 +32,16 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/tensorflow_test/data" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\ezen\PycharmProjects\mlearn_1\tensorflow_test\data" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\ezen\PycharmProjects\mlearn_1\tensorflow_test\data" />
+      <recent name="C:\Users\ezen\PycharmProjects\mlearn_1\tensorflow_test\driver" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
