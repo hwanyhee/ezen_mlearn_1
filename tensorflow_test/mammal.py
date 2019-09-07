@@ -1,3 +1,4 @@
+#one - hot 인코딩
 class Mammal:
     def __init__(self):
         pass
