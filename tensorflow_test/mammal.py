@@ -37,19 +37,21 @@ class Mammal:
 
         X = tf.placeholder(tf.float32)
         Y = tf.placeholder(tf.float32)
-        W = tf.Variable(tf.random_uniform([2,3],-1,1.))
+        #W = tf.Variable(tf.random_normal([2,3],-1,1.))
+
+        W = tf.Variable(np.array([[-0.68315494 ,0.78944623,-1.3423607 ],[-0.83521694,-1.0736458, -0.96681505]]), dtype=tf.float32)
+
         # -1은 all
         #신경망 neural netwrok 앞으로는 nn으로 표기
         #nn은 2차원으로 [입력층(특성),출력층(레이블)] ->(2,3)으로 정합니다
         b = tf.Variable(tf.zeros([3]))
-        #b 는 편향 bias 각 레이어의
-        #
-        # 아웃 풋 갯수로 설정함. 최종 결과값의 분류 갯수인 3으로 설정함
+        #b 는 편향 bias 각 레이어의 아웃 풋 갯수로 설정함. 최종 결과값의 분류 갯수인 3으로 설정함
         #W는 가중치 WEIGHT
 
         L = tf.add(tf.matmul(X,W),b)
         #가중치와 편향을 이용해 계산한 결과값(리그레션)을 활성화 함수에
-        L = tf.nn.relu(L)
+
+        #L = tf.nn.relu(L)  #relu를 쓰면 정확도가 더 떨어짐.
 
         model = tf.nn.softmax(L)
         '''
@@ -69,6 +71,8 @@ class Mammal:
         sess = tf.Session()
 
         sess.run(init)
+
+        print(sess.run(W))
         for step in range(100):
             sess.run(train_op,{X:x_data,Y:y_data})
             if (step+1) % 10 == 0:
